@@ -1,4 +1,4 @@
-f-string 获取当前时间
+1. f-string 获取当前时间
 
 ```python
 from datetime import datetime
