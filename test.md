@@ -32,3 +32,24 @@ def walkFile(file):
         for d in dirs:
             print(os.path.join(root, d))
   ```
+5. URL（Uniform Resource Locator）：统一资源定位符 "协议://IP地址/路径和文件名
+URI（Universal Resource Identifier）：统一资源标识符  
+URN（Uniform Resource Name）：统一资源名称  
+* URI 包含 URL or URN 
+* Data URI scheme 简称 Data URI  
+https://blog.csdn.net/qq_38128179/article/details/100663085
+
+6. // 除法向下取整
+
+7. cd（change directory）
+cd / 跳转根目录  
+cd ../  跳转上一级目录 "/"可省略  
+cd 、cd ~ 和cd $HOME  跳转到当前用户的家目录  
+cd - 跳转进入此目录之前所在目录
+
+8. ％05d和％5d
+
+%nd 输出的整型宽度至少为n位，右对齐，%5d即宽度至少为5位，位数大于5则输出实际位数  
+%0nd 用得比较多，表示输出的整型宽度至少为n位，不足n位用0填充  
+printf（"%05d",1）输出：00001  
+printf（"%5d",1）输出：****1（*为空格）  
