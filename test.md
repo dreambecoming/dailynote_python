@@ -63,7 +63,23 @@ printf（"%5d",1）输出：****1（*为空格）
     a.strip()==''
     a.isspace() == True
     
-9. 查找匹配 文件名  
+9. 符号
+```python
+def F(*args):
+    print(args)
+
+F('XVID')
+F(*'XVID')
+print(*'XVID')
+print(*['X','V','I','D'])
+#输出
+# ('XVID',)
+# ('X', 'V', 'I', 'D')
+# X V I D
+# X V I D
+```
+
+10. 查找匹配 文件名  
 ```python
 import os
  
