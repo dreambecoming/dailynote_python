@@ -1,5 +1,6 @@
-1. f-string 获取当前时间
+1. f-string 格式化字符串常量（formatted string literals）
 
+* 获取当前时间
 ```python
 from datetime import datetime
 e = datetime.now()
@@ -39,9 +40,6 @@ URN（Uniform Resource Name）：统一资源名称
 * Data URI scheme 简称 Data URI  
 https://blog.csdn.net/qq_38128179/article/details/100663085
 
-6. // 除法向下取整
-
-
 7. ％05d和％5d
 
 %nd 输出的整型宽度至少为n位，右对齐，%5d即宽度至少为5位，位数大于5则输出实际位数  
@@ -62,8 +60,37 @@ printf（"%5d",1）输出：****1（*为空格）
     len(a)>0
     a.strip()==''
     a.isspace() == True
-    
-9. 符号
+
+9. 字典
+
+* locals() globals()
+
+'键-值对' 转为 '变量-变量值对'
+```python
+# https://blog.csdn.net/nyan_pass/article/details/80102308
+dictA={'key1':'value1','key2':'value2','key3':'value3'}
+globals().update(dictA) # 将 dictA 添加到 全局变量中
+print(key1,key2,key3)
+```
+* 值反查键
+https://blog.csdn.net/edians/article/details/99296269
+```python
+mydisc = {'key1':'123', 'key2':'234', 'key3':'345','key5':'123'}
+get_value = input('请输入要查值：')
+if get_value in mydisc.values():
+    for a in range(0,len(mydisc)):
+        if list(mydisc.values())[a]==get_value:
+            print(list(mydisc.keys())[a])
+else:
+    print('你要查询的值'+get_value+'不存在')
+```
+
+10. 符号
+
+* *、** 号
+调用函数 和 定义函数 时候   
+https://blog.csdn.net/yhs_cy/article/details/79438706  
+https://www.cnblogs.com/omg-hxy/p/9081177.html
 ```python
 def F(*args):
     print(args)
@@ -78,6 +105,8 @@ print(*['X','V','I','D'])
 # X V I D
 # X V I D
 ```
+* // 除法向下取整
+
 
 10. 查找匹配 文件名  
 ```python
