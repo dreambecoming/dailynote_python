@@ -13,4 +13,5 @@ https://www.runoob.com/linux/linux-comm-unzip.html
 -q 执行时不显示任何信息  
 -d<目录> 指定文件解压缩后所要存储的目录  
 
-* 
+* wget(World Wide Web get)
+https://www.cnblogs.com/itech/archive/2009/08/31/1555966.html  
