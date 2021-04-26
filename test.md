@@ -7,7 +7,7 @@ e = datetime.now()
 f'the time is {e:%F %X}'
 ```
 
-2. nvidia-smi
+2. nvidia-smi  
 显示所有GPU的当前信息状态。System management interface
 
 watch -n 0.1 nvidia-smi 每0.1秒刷新
@@ -108,7 +108,7 @@ print(*['X','V','I','D'])
 * // 除法向下取整
 
 
-10. 查找匹配 文件名  
+11. 查找匹配 文件名  
 ```python
 import os
  
@@ -117,3 +117,14 @@ files = os.listdir(pathlog)
 for f in files:
     if 'stat' in f and f.endswith('.log'):
 ```
+
+12. datetime 模块  
+https://www.cnblogs.com/guigujun/p/6149770.html
+```python
+#!usr/bin/python
+import datetime
+
+datetime.datetime.now()
+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+```
+
